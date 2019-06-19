@@ -42,4 +42,4 @@ In your console window go the directory the files this repo is located in
 
 ## LIRI in Action
 
-![alt text](https://raw.githubusercontent.com/jonhadi//LIRI-node-app/branchmaster/images/LIRI.gif)
+![alt text](https://github.com/jonhadi/LIRI-node-app/blob/master/images/LIRI.gif)
