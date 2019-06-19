@@ -6,26 +6,25 @@ LIRI takes a few commands and processes them. It searches and returns informatio
 
 To accomplish this, LIRI utilizes Nodejs and the following node modules: Axios for "Bands in Town" API for concerts search and OMDB for movie searches,Node-Spotify-API, moment for time readablity, and DotEnv for asset protection.
 
-TO USE:
+# TO USE:
 User will need to install Nodejs and the listed modules above.
 User also will need their own spotify API key
 User will then need to make their own .env file
-In the .env file: (do not copy the hyphens)
----------------------------------------
-# Spotify API keys
+In the .env file: 
+
+"# Spotify API keys
 
 SPOTIFY_ID=[your-spotify-id]
-SPOTIFY_SECRET=[your-spotify-secret]
----------------------------------------
+SPOTIFY_SECRET=[your-spotify-secret]"
+
 where user inputs their spotify key this will keep the file in a file that is not uploaded to Git
 This is accomplished by a .gitignore file with the following
----------------------------------------
+"
 node_modules
 .DS_Store
 .env
----------------------------------------
-
-HOW TO USE:
+"
+# HOW TO USE:
 In your console window go the directory the files this repo is located in
  - these are the four commands you can type into the console:
 
