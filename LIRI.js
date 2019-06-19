@@ -86,11 +86,11 @@ function concertThis(artistName) {
         var fs = require("fs");
         //console.log(response.data);
         for (var j = 0; j < response.data.length; j++) {
-            var venueName = response.data[0].venue.name;
+            var venueName = response.data[j].venue.name;
             console.log("Venue Name: " + venueName);
-            console.log("Latitude: " + response.data[0].venue.latitude);
-            console.log("Longitude: " + response.data[0].venue.longitude);
-            console.log("Date: " + moment(response.data[0].datetime).format('MMMM Do YYYY, h:mm:ss a'));
+            console.log("Latitude: " + response.data[j].venue.latitude);
+            console.log("Longitude: " + response.data[j].venue.longitude);
+            console.log("Date: " + moment(response.data[j].datetime).format('MMMM Do YYYY, h:mm:ss a'));
             console.log("----------------------------------------------------")
         }
     

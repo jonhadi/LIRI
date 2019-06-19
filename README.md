@@ -6,7 +6,7 @@ LIRI takes a few commands and processes them. It searches and returns informatio
 
 To accomplish this, LIRI utilizes Nodejs and the following node modules: Axios for "Bands in Town" API for concerts search and OMDB for movie searches,Node-Spotify-API, moment for time readablity, and DotEnv for asset protection.
 
-# TO USE:
+## TO USE:
 User will need to install Nodejs and the listed modules above.
 User also will need their own spotify API key
 User will then need to make their own .env file
@@ -24,7 +24,7 @@ node_modules
 .DS_Store
 .env
 "
-# HOW TO USE:
+## HOW TO USE:
 In your console window go the directory the files this repo is located in
  - these are the four commands you can type into the console:
 
@@ -40,3 +40,6 @@ In your console window go the directory the files this repo is located in
 "node LIRI.js do-what-it-says"
  - this last commands needs a command in a text document named "random.txt"
 
+## LIRI in Action
+
+![alt text](https://raw.githubusercontent.com/jonhadi//LIRI-node-app/branchmaster/images/LIRI.gif)
