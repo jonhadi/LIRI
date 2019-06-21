@@ -64,11 +64,44 @@ function spotifyThis(songName) {
         if (err) {
           return console.log('Error occurred: ' + err);
         }
+        
+        var command = process.argv[0];
+        for (var i = 1; i < process.argv.length; i++) {
+            command = command.concat(" ", process.argv[i]);
+        }
+        fs.appendFile("log.txt", command + "\n", function(err) {
+            if (err) {
+            return console.log(err);
+            } else {
+                console.log("Logged!");
+              }
+        });;
 
         for (var i = 0; i < data.tracks.items.length; i++) { 
+            var artists = data.tracks.items[i].artists[0].name;
+            console.log(data.tracks.items[i].artists[0].name);
             for (var j = 0; j <data.tracks.items[i].artists.length; j++) {
-                console.log("Artist's Name: " + data.tracks.items[i].artists[j].name);
+                artists= artists.concat(", ", data.tracks.items[i].artists[j].name);
             }
+            fs.appendFile("log.txt",
+            "Artist's Name: " + artists + "\n" + 
+            "Song Name: " + data.tracks.items[i].name + "\n" + 
+            "Album Name: " + data.tracks.items[i].album.name + "\n" + 
+            "Link: " + data.tracks.items[i].preview_url + "\n" + 
+            "---------------------------------------------------- \n",
+            function(err) {
+                if (err) {
+                return console.log(err);
+                } 
+            });;
+       }
+
+        for (var i = 0; i < data.tracks.items.length; i++) { 
+            var artists = data.tracks.items[i].artists[0].name;
+            for (var j = 0; j <data.tracks.items[i].artists.length; j++) {
+                artists = artists.concat(", ", data.tracks.items[i].artists[j].name);
+            }
+            console.log("Artist's Name: " + artists);
             console.log("Song Name: " + data.tracks.items[i].name);
             console.log("Album Name: " + data.tracks.items[i].album.name);
             console.log("Link: " + data.tracks.items[i].preview_url);
@@ -84,10 +117,35 @@ function concertThis(artistName) {
     axios.get("https://rest.bandsintown.com/artists/" + artistName + "/events?app_id=codingbootcamp").then(
         function(response) {
         var fs = require("fs");
-        //console.log(response.data);
+
+        var command = process.argv[0];
+        for (var i = 1; i < process.argv.length; i++) {
+            command = command.concat(" ", process.argv[i]);
+        }
+        fs.appendFile("log.txt", command + "\n", function(err) {
+            if (err) {
+            return console.log(err);
+            } else {
+                console.log("Logged!");
+              }
+        });;
+
         for (var j = 0; j < response.data.length; j++) {
-            var venueName = response.data[j].venue.name;
-            console.log("Venue Name: " + venueName);
+        fs.appendFile("log.txt",
+        "Venue Name: " + response.data[j].venue.name + "\n" +
+        "Latitude: " + response.data[j].venue.latitude + "\n" +
+        "Longitude: " + response.data[j].venue.longitude + "\n" +
+        "Date: " + moment(response.data[j].datetime).format('MMMM Do YYYY, h:mm:ss a') + "\n" +
+        "---------------------------------------------------- \n" 
+        , function(err) {
+            if (err) {
+            return console.log(err);
+            }
+        });;
+        }
+
+        for (var j = 0; j < response.data.length; j++) {
+            console.log("Venue Name: " + response.data[j].venue.name);
             console.log("Latitude: " + response.data[j].venue.latitude);
             console.log("Longitude: " + response.data[j].venue.longitude);
             console.log("Date: " + moment(response.data[j].datetime).format('MMMM Do YYYY, h:mm:ss a'));
@@ -125,9 +183,27 @@ function movieThis(movieName) {
       function(response) {
         var fs = require("fs");
     
-        // writes out api call to .json file
-        //fs.writeFileSync("omdbAPI.json", JSON.stringify(response.data, null, 2), "utf-8");
-    
+        var command = process.argv[0];
+        for (var i = 1; i < process.argv.length; i++) {
+            command = command.concat(" ", process.argv[i]);
+        }
+
+        fs.appendFile("log.txt", command + "\n" +
+        "Title: " + response.data.Title + "\n" +
+        "Year: " + response.data.Released + "\n" +
+        "IMDB Rating: " + response.data.imdbRating + "\n" +
+        "Rotten Tomatoes: " + response.data.Ratings[1].Value + "\n" +
+        "Country Produced: " + response.data.Country + "\n" +
+        "Language: " + response.data.Language + "\n" +
+        "Plot: " + response.data.Plot + "\n" +
+        "Actors: " + response.data.Actors, function(err) {
+            if (err) {
+            return console.log(err);
+            } else {
+                console.log("Logged!");
+              }
+            });;
+
         console.log("Title: " + response.data.Title);
         console.log("Year: " + response.data.Released);
         console.log("IMDB Rating: " + response.data.imdbRating);

@@ -1,0 +1,101 @@
+C:\Program Files\nodejs\node.exe C:\Users\hadij\Desktop\BootCamp\LIRI\liri spotify-this-song mercy
+Artist's Name: YBN Cordae, YBN Cordae
+Song Name: Have Mercy
+Album Name: Have Mercy
+Link: https://p.scdn.co/mp3-preview/a5d40068d0983b41d23ff3155811cd640801e72b?cid=c5ea183d30e34624b7c942635522f24b
+---------------------------------------------------- 
+Artist's Name: Shawn Mendes, Shawn Mendes
+Song Name: Mercy
+Album Name: Illuminate (Deluxe)
+Link: null
+---------------------------------------------------- 
+Artist's Name: Kanye West, Kanye West, Big Sean, Pusha T, 2 Chainz
+Song Name: Mercy
+Album Name: Mercy
+Link: null
+---------------------------------------------------- 
+Artist's Name: Brett Young, Brett Young
+Song Name: Mercy
+Album Name: Brett Young
+Link: null
+---------------------------------------------------- 
+Artist's Name: T.I., T.I., Eminem
+Song Name: That's All She Wrote (feat. Eminem)
+Album Name: No Mercy
+Link: https://p.scdn.co/mp3-preview/29d055e213dce7e0e6ba2cf3ae436d6a474422b4?cid=c5ea183d30e34624b7c942635522f24b
+---------------------------------------------------- 
+Artist's Name: Kanye West, Kanye West, Big Sean, Pusha T, 2 Chainz
+Song Name: Mercy.1
+Album Name: Kanye West Presents Good Music Cruel Summer
+Link: null
+---------------------------------------------------- 
+Artist's Name: Duffy, Duffy
+Song Name: Mercy
+Album Name: Rockferry
+Link: null
+---------------------------------------------------- 
+Artist's Name: Brett Young, Brett Young
+Song Name: Mercy
+Album Name: Brett Young (Big Machine Radio Release Special)
+Link: null
+---------------------------------------------------- 
+Artist's Name: Madonna, Madonna
+Song Name: Looking For Mercy
+Album Name: Madame X (Deluxe)
+Link: null
+---------------------------------------------------- 
+Artist's Name: Lewis Capaldi, Lewis Capaldi
+Song Name: Mercy
+Album Name: Bloom - EP
+Link: null
+---------------------------------------------------- 
+C:\Program Files\nodejs\node.exe C:\Users\hadij\Desktop\BootCamp\LIRI\liri concert-this skrillex
+Venue Name: Kaos @ Palms Casino Resort
+Latitude: 36.175
+Longitude: -115.1363889
+Date: June 21st 2019, 10:00:00 pm
+---------------------------------------------------- 
+Venue Name: Kaos [SOAK Sundays] @ Palms Casino Resort
+Latitude: 36.175
+Longitude: -115.1363889
+Date: June 30th 2019, 10:30:00 pm
+---------------------------------------------------- 
+Venue Name: Kaos @ Palms Casino Resort
+Latitude: 36.175
+Longitude: -115.1363889
+Date: July 7th 2019, 7:00:24 pm
+---------------------------------------------------- 
+Venue Name: Kaos @ Palms Casino Resort
+Latitude: 36.175
+Longitude: -115.1363889
+Date: July 18th 2019, 10:00:00 pm
+---------------------------------------------------- 
+Venue Name: Kaos @ Palms Casino Resort
+Latitude: 36.0944444
+Longitude: -115.0411111
+Date: July 21st 2019, 10:00:00 pm
+---------------------------------------------------- 
+Venue Name: Kaos @ Palms Casino Resort
+Latitude: 36.175
+Longitude: -115.1363889
+Date: July 26th 2019, 10:00:39 pm
+---------------------------------------------------- 
+Venue Name: VELD Music Festival [August 3-4]
+Latitude: 43.7420033
+Longitude: -79.4805856
+Date: August 3rd 2019, 7:00:13 pm
+---------------------------------------------------- 
+Venue Name: DOG BLOOD @ Electric Zoo [Aug 30 - Sept 1]
+Latitude: 40.7141667
+Longitude: -74.0063889
+Date: August 30th 2019, 7:00:16 pm
+---------------------------------------------------- 
+C:\Program Files\nodejs\node.exe C:\Users\hadij\Desktop\BootCamp\LIRI\liri.js movie-this pirates of the caribbean
+Title: Pirates of the Caribbean: The Curse of the Black Pearl
+Year: 09 Jul 2003
+IMDB Rating: 8.0
+Rotten Tomatoes: 79%
+Country Produced: USA
+Language: English
+Plot: Blacksmith Will Turner teams up with eccentric pirate "Captain" Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.
+Actors: Johnny Depp, Geoffrey Rush, Orlando Bloom, Keira Knightley
